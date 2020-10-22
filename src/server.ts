@@ -19,4 +19,4 @@ app.get('/', async (request, response) => {
   return response.json({ message: 'CypherST Server Started' });
 });
 
-app.listen();
+app.listen(process.env.PORT || 3333);
