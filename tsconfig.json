@@ -16,6 +16,20 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@controllers/*":["./src/api/controllers/*"],
+      "@models/*":["./src/api/models/*"],
+      "@repositories/*":["./src/api/repositories/*"],
+      "@services/*":["./src/api/services/*"],
+      "@subscribers/*":["./src/api/subscribers/*"],
+      "@config/*":["./src/config/*"],
+      "@helpers/*":["./src/helpers/*"],
+      "@jobs/*":["./src/jobs/*"],
+      "@loaders/*":["./src/loaders/*"],
+      "@routes/*":["./src/routes/*"],
+      "@utils/*":["./src/utils/*"],
+    }
   }
 }
