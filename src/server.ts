@@ -8,7 +8,7 @@ const app = express();
 app.use(cors);
 app.use(express.json());
 
-app.get('/auth', async (request, response) => {
+app.get('/', async (request, response) => {
   const url = 'https://api.instagram.com/oauth/authorize';
   const appId = process.env.INSTAGRAM_APP_ID;
   const redirectURI = process.env.INSTAGRAM_APP_REDIRECT_URI;
