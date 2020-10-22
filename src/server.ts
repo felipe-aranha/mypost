@@ -20,8 +20,9 @@ app.get('/auth', async (request, response) => {
 });
 
 app.get('/auth', async (request, response) => {
-  console.log(request);
-  return response.json({ message: 'Auth' });
+  const code = request.params;
+  console.log(code);
+  return response.status(200).json(code);
 });
 
 app.listen(process.env.PORT || 3333);
