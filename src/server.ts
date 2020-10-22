@@ -9,6 +9,7 @@ app.use(cors);
 app.use(express.json());
 
 app.get('/', async (request, response) => {
+  console.log('rota default');
   const url = 'https://api.instagram.com/oauth/authorize';
   const appId = process.env.INSTAGRAM_APP_ID;
   const redirectURI = process.env.INSTAGRAM_APP_REDIRECT_URI;
