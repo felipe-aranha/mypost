@@ -17,4 +17,4 @@ app.get('/', async (request, response) => {
   return response.json({ message: 'CypherST Server Started' });
 });
 
-app.listen(3333);
+app.listen();
